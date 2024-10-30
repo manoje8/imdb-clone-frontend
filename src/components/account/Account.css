@@ -1,0 +1,64 @@
+.account {
+    padding: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 13px;
+    line-height: 19px;
+    color: #000000;
+    background-color: #fbfcfc;
+    font-family: Arial,sans-serif;
+}
+
+.account section {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+}
+
+.account section h1 {
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 1.2;
+    text-rendering: optimizeLegibility;
+    padding-bottom: 4px;
+}
+
+.account-form div{
+    margin-bottom: 13px;
+}
+
+.account-form label {
+    font-weight: 600;
+}
+
+.account-form button {
+    color: #0F1111;
+    border-radius: 8px;
+    background-color: #FFD814;
+    border-color: #FCD200;
+}
+
+.account-form button:hover{
+    background-color: #e6c003cc;
+}
+
+.sign-in-password {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.sign-in-password a {
+    font-weight: 400;
+}
+
+.new-account a {
+    border: 1px solid #ccc;
+    box-shadow: 0 2px 5px 0 rgba(213,217,217,.5);
+    border-radius: 8px;
+}
+
+.new-account a:hover {
+    background-color: #dfdfdf63;
+}

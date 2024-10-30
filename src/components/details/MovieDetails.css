@@ -1,0 +1,58 @@
+.container .row {
+    height: 80vh;
+}
+
+.left-poster {
+    height: 100%;
+}
+
+.left-poster img {
+    height: 100%;
+    object-fit: fill;
+    width: 500px;
+}
+
+.right-info {
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 10px;
+}
+
+.right-info h4 {
+    color: var(--imdb-color);
+}
+
+.right-info h4 span{
+    padding: 0 10px;
+}
+
+.right-info ul {
+    list-style: none;
+}
+
+.right-info ul li span, .right-info p{
+    color: #fff;
+    cursor: pointer;
+}
+
+.right-info ul li span:hover, .right-info p:hover {
+    color: #c1c1c1;
+    text-decoration: none;
+}
+
+.delete{
+    color: red;
+    cursor: pointer;
+}
+
+.delete:hover {
+    color: rgba(255, 4, 4, 0.722);
+}
+
+.edit{
+    cursor: pointer;
+    color: rgb(19, 153, 255);
+}
+
+.edit:hover {
+    color: rgba(3, 134, 249, 0.722);
+}

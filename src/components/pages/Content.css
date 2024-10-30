@@ -1,0 +1,107 @@
+.content-container {
+    color: #fff;
+    position: relative;
+    margin: 20px;
+}
+
+.base-title {
+    padding: 1.5rem 0;
+    color: var(--imdb-color);
+}
+
+.base-title h3 {
+    font-family: Roboto,Helvetica,Arial,sans-serif;
+    font-size: 2rem;
+    font-weight: 500;
+    line-height: 2.5rem;
+    letter-spacing: .00735em;
+    text-transform: none;
+}
+
+/* Section */
+
+.page-section {
+    height: 100vh;
+    margin-top: 1rem;
+}
+
+.subsection-title {
+    font-family: Roboto,Helvetica,Arial,sans-serif;
+    font-size: 1.5rem;
+    font-weight: 600;
+    line-height: 1.5rem;
+    letter-spacing: normal;
+    text-transform: none;
+    -webkit-font-smoothing: auto;
+    line-height: 1.2em;
+    margin-bottom: 1rem;
+    position: relative;
+    width: 100%;
+}
+
+.subsection-title a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.title-text {
+    display: flex;
+    max-height: 2.4em;
+    overflow: hidden;
+    border: none;
+    padding-left: .75rem;
+    position: relative;
+}
+
+.title-text:before {
+    background: var(--imdb-color);
+    border-radius: 40px;
+    content: "";
+    margin-left: -.75rem;
+    align-self: flex-start;
+    position: absolute;
+    height: 100%;
+    width: 4px;
+}
+
+.chevron-right {
+    font-size: .8em;
+    margin-left: .5em;
+    align-self: center;
+    transition: color .15s,opacity .15s,transform .15s;
+    flex-shrink: 0;
+    height: 1em;
+    width: 1em;
+}
+
+.title-text:hover .chevron-right {
+    color: var(--imdb-color);
+}
+
+.title-description {
+    font-family: Roboto,Helvetica,Arial,sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5rem;
+    letter-spacing: .03125em;
+    text-transform: none;
+    -webkit-font-smoothing: auto;
+    border: none;
+    display: block;
+    padding-top: .5rem;
+    color: hsla(0,0%,100%,.7);
+}
+
+/* Shoveler */
+
+.shoveler {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 1rem;
+    position: relative;
+    overflow-x: hidden;
+    overscroll-behavior-x: contain;
+    z-index: 0;
+    height: 80vh;
+}
+

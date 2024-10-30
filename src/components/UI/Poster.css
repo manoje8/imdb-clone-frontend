@@ -1,0 +1,44 @@
+.card {
+    background-color: inherit;
+    cursor: pointer;
+}
+
+.card img {
+    height: 280px;
+}
+
+.card-body {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    background-color: rgba(255, 255, 255, 0.08);
+}
+
+.card-body h5 {
+    display: block;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    font-family: Roboto,Helvetica,Arial,sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5rem;
+    letter-spacing: .03125em;
+    text-transform: none;
+    -webkit-font-smoothing: auto;
+    line-height: 1.25rem;
+}
+
+.card a {
+    background-color: rgba(255, 255, 255, 0.08);
+    border-radius: 24px;
+    font-weight: 500;
+}
+
+.card a:hover {
+    background-color: rgba(255, 255, 255, 0.18);
+}
+
+.bi-star-fill {
+    color: gold;   
+}

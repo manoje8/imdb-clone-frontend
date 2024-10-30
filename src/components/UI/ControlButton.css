@@ -1,0 +1,17 @@
+.carousel-control {
+    position: absolute;
+    margin: 2px;
+    top: 35%;
+    height: 60px;
+    width: 50px;
+    border: 1px solid rgba(255, 255, 255, 0.801);
+    background-color: rgba(24, 24, 24, 0.45);
+    border-radius: 4px;
+    opacity: 1;
+    transition: all .25s ease-out;
+}
+
+.carousel-control-prev:hover , .carousel-control-next:hover{
+    transition: all .25s ease-in;
+    color: var(--imdb-color);
+}
