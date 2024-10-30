@@ -26,8 +26,8 @@ An IMDb-inspired web application built using the MERN stack, with Redux for stat
 1. Clone the repository and navigate to the `client` folder:
 
 ```
-git clone https://github.com/your-username/ebook-reader.git	
-cd ebook-reader
+git clone https://github.com/manoje8/imdb-clone-frontend.git	
+cd imdb-clone-frontend
 ```
 
 2. Install the dependencies:
