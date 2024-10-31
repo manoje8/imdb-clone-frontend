@@ -34,7 +34,7 @@ const UpdateMovie = () => {
                 plot: movieData.plot,
                 poster: movieData.poster,
                 actors: movieData.actorIds || [],
-                producer: movieData.producerId || { name: "", company: "", bio: "" }
+                producer: movieData.producerId || { name: "", company: "", bio: "", profile: ""}
             });
         }
     }, [movieData]);
@@ -155,6 +155,17 @@ const UpdateMovie = () => {
                                 className="form-control form-control-sm"
                                 onChange={(e) => handleActorChange(index, e)}
                                 value={actor.bio}
+                                required
+                            />
+                        </div>
+                        <div className="form-group">
+                            <label>Profile</label>
+                            <input
+                                name="profile"
+                                type="text"
+                                className="form-control form-control-sm"
+                                onChange={(e) => handleActorChange(index, e)}
+                                value={actor.profile}
                                 required
                             />
                         </div>
