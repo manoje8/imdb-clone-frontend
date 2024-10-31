@@ -13,17 +13,25 @@ const ActorDetails = () => {
         dispatch(fetchActorById(actorId))
     },[dispatch, actorId])
 
+    const profileStyle = {
+        height: "100px",
+        width: "100px",
+        borderRadius: "8px",
+        objectFit: "fill"
+    }
     
 
     return (
         <div className="container">
             {
                 isLoading ? <Loader /> :
-                <div>
-                    <div>
-                        <h2>Name: {actorDetails.findActor?.name}</h2>
-                        <p>Company: {actorDetails.findActor?.profile}</p>
-                        <p>Bio: {actorDetails.findActor?.bio}</p>
+                <div className="p-3">
+                    <div className="d-flex">
+                        <img style={profileStyle} className="profile" src={actorDetails.findActor?.profile} alt="..." />
+                        <div className="mx-2">
+                            <h2>{actorDetails.findActor?.name}</h2>
+                            <p>{actorDetails.findActor?.bio}</p>
+                        </div>
                     </div>
                     <hr style={{backgroundColor: "#fff"}}/>
                     <DetailCard userMovie={actorDetails.findActorMovies}/>
