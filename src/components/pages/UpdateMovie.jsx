@@ -113,7 +113,7 @@ const UpdateMovie = () => {
                     </div>
                     <div className="form-group">
                         <label>Release Year</label>
-                        <input name="releaseYear" type="text" className="form-control form-control-sm" onChange={handleChange} value={values.releaseYear} required/>
+                        <input name="releaseYear" type="text" className="form-control form-control-sm" onChange={handleChange} value={values.releaseYear} placeholder="2024" required/>
                     </div>
                     <div className="form-group">
                         <label>Poster</label>
@@ -144,6 +144,7 @@ const UpdateMovie = () => {
                                 className="form-control form-control-sm"
                                 onChange={(e) => handleActorChange(index, e)}
                                 value={actor.dob}
+                                placeholder="yyyy-mm-dd"
                                 required
                             />
                         </div>
